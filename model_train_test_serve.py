@@ -214,6 +214,6 @@ if __name__ == "__main__":
             train_and_save_model(df, features_list, target_list)
 
     # Run the Flask app
-    print("\nStarting Flask API. Send a POST request to http://127.0.0.1:5000/predict")
+    print("\nStarting Flask API. Send a POST request to http://127.0.0.1:5000/predict_fraud")
     print("Example JSON body: {'order_value': 1500, 'country_code': 'GB', 'order_date': '2025-05-15'}")
     app.run(debug=True, use_reloader=False)
