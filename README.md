@@ -7,4 +7,5 @@ Breaks down ml model lifecyle from train to deployment
 •	Deployment: The model is deployed then loaded from the filesystem and with inference post data (that is one-hot encoded) a prediction is made. I have created a simple FLASK REST API endpoint (‘/predict_fraud’) that takes new order data as input and returns a fraud prediction. This can then be served to a live application.
 
 Served from: http://127.0.0.1:5000/predict_fraud
+
 Example JSON body: {'order_value': 1500, 'country_code': 'GB', 'order_date': '2025-05-15'}
