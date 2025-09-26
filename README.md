@@ -8,4 +8,8 @@ Breaks down ml model lifecyle from train to deployment
 
 Served from: http://127.0.0.1:5000/predict_fraud
 
-Example JSON body: {'order_value': 1500, 'country_code': 'GB', 'order_date': '2025-05-15'}
+To run the API/Model-train-test-deploy: python model_train_test_serve.py or python3 model_train_test_serve.py
+
+To run test: python test_fraud_detection.py python3 test_fraud_detection.py
+
+Example JSON body: {'order_value': 1500, 'country_code': 'GB', 'order_date': '2025-05-15', 'email': 'test@domain.com'}
