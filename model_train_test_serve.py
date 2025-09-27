@@ -125,6 +125,8 @@ def train_and_save_model(df, numerical_features, categorical_features, target):
 
     X = pd.concat([X_encoded, X_numerical], axis=1)
 
+
+    # Explicitly ensure the original categorical features are NOT in the final feature list X
     cols_to_drop_if_present = [col for col in categorical_features if col in X.columns]
     if cols_to_drop_if_present:
         X.drop(columns=cols_to_drop_if_present, inplace=True)
