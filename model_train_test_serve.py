@@ -1,7 +1,4 @@
-# This script demonstrates a complete machine learning pipeline for fraud detection,
-# tailored for an ML Engineer role assessment. It covers data loading, cleaning,
-# feature engineering, model training, and evaluation, and now includes a
-# simple, production-ready REST API for predictions.
+
 
 import pandas as pd
 from sklearn.model_selection import train_test_split
